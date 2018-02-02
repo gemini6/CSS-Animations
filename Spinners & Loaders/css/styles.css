@@ -1,0 +1,239 @@
+
+body {
+  padding-top: 50px;
+  background-color: #363636;
+}
+
+.wrapper {
+  padding: 40px 15px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Globals */
+
+.loader {
+  background-color: #eeeeee;
+  width: 300px;
+  height: 80px;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-right: auto;
+  box-shadow: 0px 2px 4px #000000;
+}
+
+/* Loader1 */
+
+.loader1 .dot {
+  background-color: OrangeRed;
+  color: #f7f7f7;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 30px;
+  border-radius: 50%;
+  animation-name: loader1Pulsate;
+  animation-duration: .45s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.loader1 .dot1 {
+  animation-delay: .0s;
+}
+
+.loader1 .dot2 {
+  animation-delay: .10s;
+}
+
+.loader1 .dot3 {
+  animation-delay: .20s;
+}
+
+.loader1 .dot4 {
+  animation-delay: .30s;
+}
+
+.loader1 .dot5 {
+  animation-delay: .30s;
+}
+
+.loader1 .dot6 {
+  animation-delay: .50s;
+}
+
+.loader1 .dot7 {
+  animation-delay: .60s;
+}
+
+@keyframes loader1Pulsate {
+  0% {
+	-webkit-transform: scale(0);
+	transform: scale(0);
+  }
+  
+  100% {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  }
+}
+
+/*--------------*/
+
+/* Loader2 */
+
+.loader2-bar {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 30px;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #6d6d6d;
+}
+
+.loader2-bar .loader2-progress {
+  background-color: OrangeRed;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 0%;
+  height: 100%;
+  animation-name: loader2Fill;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.loader2-bar p {
+  color: #262626;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+  animation-name: loader2TxtColorTransition;
+  animation-duration: 1.95s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loader2TxtColorTransition {
+  100% {
+	color: #f7f7f7;
+  }
+}
+
+@keyframes loader2Fill {
+  100% {
+	width: 100%;
+  }
+}
+
+/*--------------*/
+
+/* Loader3 */
+
+.loader3-bar {
+  position: relative;
+  display: inline-block;
+  width: 247px;
+  height: 30px;
+  margin-top: 25px;
+  border: 1px solid #6d6d6d;
+  padding: 0;
+}
+
+.loader3-bar .square {
+  background-color: OrangeRed;
+  color: #f7f7f7;
+  position: absolute;
+  left: 0;
+  width: 35px;
+  height: 28px;
+  line-height: 28px;
+  margin: 0;
+  /*border-right: 1px solid #6d6d6d;*/
+  padding: 0;
+  animation-name: loader3StackInline;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.loader3-bar .square1 {
+	animation-name: loader3Square;
+	animation-duration: .45s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-direction: forward;
+}
+
+.loader3-bar .square2 {
+	animation-name: loader3Square;
+	animation-duration: .45s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-direction: forward;
+	animation-delay:  .45s;
+}
+
+.loader3-bar .square3 {
+    animation-name: loader3Square;
+	animation-duration: .45s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-direction: forward;
+	animation-delay:  .90s;
+}
+
+.loader3-bar .square4 {
+	animation-name: loader3Square;
+	animation-duration: .45s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-direction: forward;
+	animation-delay: 1.35s;
+}
+
+.loader3-bar .square5 {
+	animation-name: loader3Square;
+	animation-duration: .45s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-direction: forward;
+	animation-delay: 180s;
+}
+
+.loader3-bar .square6 {
+	animation-name: loader3Square;
+	animation-duration: .45s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-direction: forward;
+	animation-delay: 5s;
+}
+
+.loader3-bar .square7 {
+	animation-name: loader3Square;
+	animation-duration: .45s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-direction: forward;
+	animation-delay: 6s;
+}
+
+@keyframes loader3Square {
+  0% {
+	left: 0;
+  }
+  
+  100%{
+    left: 86%;
+  }
+}
